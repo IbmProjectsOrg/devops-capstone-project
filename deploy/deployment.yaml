@@ -6,6 +6,7 @@ metadata:
     app: accounts
   name: accounts
 spec:
+
   replicas: 3
   selector:
     matchLabels:
@@ -18,7 +19,7 @@ spec:
         app: accounts
     spec:
       containers:
-      - image: us.icr.io/sn-labs-manumarpred/accounts:1
+      - image: image-registry.openshift-image-registry.svc:5000/sn-labs-manumarpred/accounts:1
         name: accounts
         resources: {}
 
