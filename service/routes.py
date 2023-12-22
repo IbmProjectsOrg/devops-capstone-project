@@ -62,7 +62,7 @@ def create_accounts():
 ######################################################################
 
 # ... place you code here to LIST accounts ...
-@app.route("/accounts", methods=["GET"])
+@app.route("/accounts", methods=["GET"]) # noqa: E262, E302, E261
 def list_accounts():
     """
     List all Accounts
@@ -134,7 +134,6 @@ def delete_accounts(account_id):
 ######################################################################
 #  U T I L I T Y   F U N C T I O N S
 ######################################################################
-
 
 def check_content_type(media_type):
     """Checks that the media type is correct"""
